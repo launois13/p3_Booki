@@ -385,7 +385,6 @@ header {
 .activites-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 30px;
     
 }
@@ -477,22 +476,6 @@ footer {
     text-decoration: underline;
 }
 
-/*responsive footer*/
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-    }
-    .footer-block {
-        width: 100%; /* Les blocs prennent toute la largeur sur les petits écrans */
-        text-align: left;
-    }
-}
-
-
-
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -501,8 +484,7 @@ footer {
 @media (max-width: 1024px) {
   
   /* Réinitialiser l'effet de drop shadow sur l'ensemble du bouton */
-  .first-button,
-  .third-button {
+  .first-button .third-button {
     filter: none;
   }
 
@@ -572,13 +554,17 @@ footer {
   .activites-card {
     min-height: unset;
   }
+ 
+  .text-activites-container {
+    min-height: 78px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /* ... */
   .main-container {
-    padding: 0;
+    padding: 0 0 0 0;
   }
 
   header {
@@ -666,9 +652,13 @@ footer {
 
   .populaires {
     order: 1;
+}
+
+#populaire {
+      border-radius: 0;
   }
 
-  .populaires-cards {
+.populaires-cards {
     flex-direction: column;
   }
 
@@ -676,11 +666,51 @@ footer {
     width: 100%;
   }
 
-  .hebergements .card-container {
-    flex-direction: column;
-  }
+  #hebergement {
+      background-color: #FFFFFF;
+}
 
-  .hebergements .card-container a {
+.hebergements .card-container {
+    flex-direction: column;
+    
+}
+
+.hebergements .card-container a {
     width: 100%;
   }
+
+  .card-activites-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .activites-card {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+
+}
+
+   .activites-card img{
+        max-height:244px;
+        max-width: 100%;
+        object-fit: cover;       
+}
+
+
+
+}
+
+
+/*responsive footer*/
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-block {
+        width: 100%; /* Les blocs prennent toute la largeur sur les petits écrans */
+        text-align: left;
+    }
 }
