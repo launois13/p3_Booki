@@ -34,47 +34,51 @@
         <p class="sub-title">En plein centre-ville ou en pleine nature</p>
         <!--Search Input test1 -->
         <form id="location-search" action="/index.html" method="GET" >
-        <!-- Première partie du bouton -->
-        <div class="first-button"> <i class="fa-solid fa-location-dot"></i>
-        </div>
-        <!-- Deuxième partie du bouton -->
+            <!-- Première partie du bouton -->
+            <div class="first-button"> <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <!-- Deuxième partie du bouton -->
 
-        <input id="placeholder" placeholder="Marseille, France">
+            <input id="placeholder" placeholder="Marseille, France">
 
-        <!-- Troisième partie du bouton -->
-        <button class="third-button">
-            <i id="loupe" class="fa-solid fa-magnifying-glass fa-lg"></i><!--"lg" pour élargir l'icone loupe-->
-            <span id="spam">Rechercher</span>
-        </button>
+            <!-- Troisième partie du bouton -->
+            <button class="third-button">
+                <i id="loupe" class="fa-solid fa-magnifying-glass fa-lg"></i><!--"lg" pour élargir l'icone loupe-->
+                <span id="spam">Rechercher</span>
+            </button>
         </form>
         <!-- Filtres -->
         <div id="filters">
         <p class="filters_legend">Filtres</p>
         <ul class="filters_row">
-            <div class="filters_row_portion">
-                <li class="filters_row_list">
-                <button type="button" class="filter_button">
-                    <i class="fa-solid fa-money-bill-wave filter_icon"></i> Économique 
-                </button>
-                </li>
-                <li class="filters_row_list">
-                <button type="button" class="filter_button">
-                    <i class="fa-solid fa-person filter_icon"></i> Familial 
-                </button>
-                </li>
-            </div>
-            <div class="filters_row_portion">
-                <li class="filters_row_list">
-                <button type="button" class="filter_button">
-                    <i class="fa-solid fa-heart filter_icon"></i> Romantique
-                </button>
-                </li>
-                <li class="filters_row_list">
-                <button type="button" class="filter_button">
-                    <i class="fa-solid fa-fire filter_icon"></i> Nos pépites
-                </button>
-                </li>
-            </div>
+            <li class="filters_row_portion">
+                <ul class="filters_row_sub">
+                    <li class="filters_row_list">
+                    <button type="button" class="filter_button">
+                        <i class="fa-solid fa-money-bill-wave filter_icon"></i> Économique 
+                    </button>
+                    </li>
+                    <li class="filters_row_list">
+                    <button type="button" class="filter_button">
+                        <i class="fa-solid fa-person filter_icon"></i> Familial 
+                    </button>
+                    </li>
+                </ul>
+            </li>
+            <li class="filters_row_portion">
+                <ul class="filters_row_sub">
+                    <li class="filters_row_list">
+                    <button type="button" class="filter_button">
+                        <i class="fa-solid fa-heart filter_icon"></i> Romantique
+                    </button>
+                    </li>
+                    <li class="filters_row_list">
+                    <button type="button" class="filter_button">
+                        <i class="fa-solid fa-fire filter_icon"></i> Nos pépites
+                    </button>
+                    </li>
+                </ul>
+            </li>
         </ul>
         </div>
         <div id="info">
